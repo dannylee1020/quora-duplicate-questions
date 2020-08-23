@@ -1,0 +1,8 @@
+# model
+*.h5
+
+# data
+*.csv
+*.npy
+*.pkl
+
