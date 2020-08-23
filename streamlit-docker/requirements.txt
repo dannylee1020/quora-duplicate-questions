@@ -1,0 +1,10 @@
+# app
+streamlit
+
+# modeling
+numpy
+nltk == 3.2.5
+tensorflow == 2.3.0
+keras == 2.4.3
+pandas
+scikit-learn == 0.23.2

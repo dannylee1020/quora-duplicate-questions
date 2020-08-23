@@ -1,0 +1,13 @@
+# modeling
+numpy
+nltk == 3.2.5
+tensorflow == 2.3.0
+keras == 2.4.3
+pandas
+scikit-learn == 0.23.2
+
+# test
+pytest>=5.3.2,<6.0.0
+
+# packaging
+setuptools >= 41.4.0,<42.0.0
