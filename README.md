@@ -7,7 +7,7 @@ With over 100m people visiting Quora every month, many people ask similarly word
 This is a many-to-one binary classification problem. For modeling I use pre-trained GloVe embeddings with bidirectional LSTM connected to several  connected layers. With minimal hyperparameter tuning and fairly simple model architecture, the model achieved highest accuracy of 81%. Stacking LSTM layers to create deeper network and some hyperparameter tuning could achieve higher overall accuracy. The model was trained on google colab's GPU. See .ipynb in modeling file for details
 <br>
 <br>
-<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/bi_model.png" width="480" height='480'>
+<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/bi_model.png" width="600" height='480'>
 
 ## Run with Docker
 In the root directory of Dockerfile, run:
