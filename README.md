@@ -5,9 +5,6 @@ With over 100m people visiting Quora every month, many people ask similarly word
 
 ## Model Overview
 This is a many-to-one binary classification problem. I use pre-trained GloVe embeddings with bidirectional LSTM connected to several fully connected layers. With minimal hyperparameter tuning and fairly simple model architecture, The model had two layers of Bidirectional LSTM layers of 128 nodes followed after GloVe embedding layer. Then it was connected to two fully connected dense layers of 32 nodes with output layer of 6 node and sigmoid activation. The model was trained on google colab's GPU. See .ipynb file for modeling details.
-<br>
-<br>
-<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/bi_model.png" width="600" height='480'>
 
 ## Results
 The model was run for 10 epochs at learning rate of 0.00025. The highest accuracy reached was 79%. With early stopping callback, it took about 50 minutes to train on google colab's GPU. The model was showing a sign of slight overfitting looking at the loss of training and validation results. Some hyperparameter tuning and tweaks in model structure may mitigate overfitting and improve overall accuracy. 
@@ -16,6 +13,8 @@ The model was run for 10 epochs at learning rate of 0.00025. The highest accurac
 | --- | ---- | ----- |
 | Bi LSTM | 0.43 | 79% |
 
+<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/acc.png" width="450" height='350'>
+<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/loss.png" width="450" height='350'>
 
 ## Run with Docker
 In the root directory of Dockerfile, run:
