@@ -9,13 +9,12 @@ This is a many-to-one binary classification problem. I use pre-trained GloVe emb
 ## Results
 The model was run for 10 epochs at learning rate of 0.00025. The highest accuracy reached was 79%. With early stopping callback, it took about 50 minutes to train on google colab's GPU. The model was showing a sign of slight overfitting looking at the loss of training and validation results. Some hyperparameter tuning and tweaks in model structure may mitigate overfitting and improve overall accuracy. 
 
-<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/acc.png" width="350" height='350'>
-<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/loss.png" width="350" height='350'>
-
-| Model | Loss | Accuracy 
+| Model | Loss | Accuracy |
 | --- | ---- | ----- |
 | Bi-LSTM | 0.43 | 79% |
 
+.pull-left[<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/acc.png" width="400" height='350'>]
+.pull-right[<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/loss.png" width="400" height='350'>]
 
 
 ## Run with Docker
