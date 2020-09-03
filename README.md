@@ -11,10 +11,10 @@ The model was run for 10 epochs at learning rate of 0.00025. The highest accurac
 
 | Model | Loss | Accuracy 
 | --- | ---- | ----- |
-| Bi LSTM | 0.43 | 79% |
+| Bi-LSTM | 0.43 | 79% |
 
-<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/acc.png" width="450" height='350'>
-<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/loss.png" width="450" height='350'>
+<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/acc.png" width="400" height='350'>
+<img src="https://github.com/dannylee1020/quora-duplicate-questions/blob/master/streamlit-docker/files/loss.png" width="400" height='350'>
 
 ## Run with Docker
 In the root directory of Dockerfile, run:
